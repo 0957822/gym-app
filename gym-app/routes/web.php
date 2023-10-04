@@ -21,9 +21,9 @@ Route::get('/', 'PagesController@index');
 
 */
 
-Route::get('/', 'PagesController@index');
-Route::get('/', [PagesController::class, 'index']);
+Route::get('home', 'App\Http\Controllers\HomeController@index')->name('home');
+Route::get('about', function(){return view('pages.about');})->name('about');
 
-Route::get('/about', function(){
-    return view('pages.about');
+Route::get('/', function (){
+    return view('pages.home');
 });

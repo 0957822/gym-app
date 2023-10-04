@@ -2,6 +2,6 @@
 
 @section ('content')
 
-    <p>Purple is the best</p>
+    <p>Purple is cool</p>
 
 @endsection
