@@ -23,6 +23,9 @@ Route::get('/', 'PagesController@index');
 
 Route::get('home', 'App\Http\Controllers\HomeController@index')->name('home');
 Route::get('about', function(){return view('pages.about');})->name('about');
+Route::get('exercises', function(){return view('pages.exercises');})->name('exercises');
+Route::get('login', function(){return view('pages.login');})->name('login');
+Route::get('register', function(){return view('pages.register');})->name('register');
 
 Route::get('/', function (){
     return view('pages.home');
